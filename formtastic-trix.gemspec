@@ -16,8 +16,8 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
 
-  s.add_dependency "formtastic", "~> 4.0"
-  s.add_dependency "trix"
+  s.add_dependency "formtastic", ">= 5.0", "< 6.0"
+  # Trix assets are vendored in app/assets; no runtime dependency on the trix gem
 
   s.add_development_dependency "rspec"
 end

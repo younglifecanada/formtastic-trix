@@ -1,6 +1,12 @@
 # Formtastic::Trix
 Trix is a text editor written for Basecamp. It's simple and cool and Formtastic needed a plugin for it.
 
+## Compatibility
+
+- Rails: 7.2 and 8.x
+- Formtastic: 5.x
+- Ruby: 3.1+
+
 ## Usage
 Add `trix.css` to your `application.css` file and `trix.js` to your `application.js` file.
 
@@ -17,7 +23,7 @@ In your formtastic form, implement the Trix editor like so:
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'formtastic-trix'
+gem 'formtastic-trix', '~> 0.2'
 ```
 
 And then execute:
