@@ -1,9 +1,7 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-# Maintain your gem's version:
 require "formtastic/trix/version"
 
-# Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "formtastic-trix"
   s.version     = Formtastic::Trix::VERSION
@@ -14,10 +12,11 @@ Gem::Specification.new do |s|
   s.description = "A formtastic input for the Trix Editor - https://trix-editor.org/"
   s.license     = "MIT"
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.required_ruby_version = ">= 3.1"
 
-  s.add_dependency "formtastic", ">= 5.0", "< 6.0"
-  # Trix assets are vendored in app/assets; no runtime dependency on the trix gem
+  s.files = Dir["{app,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+
+  s.add_dependency "formtastic", ">= 5.0", "< 7.0"
 
   s.add_development_dependency "rspec"
 end
